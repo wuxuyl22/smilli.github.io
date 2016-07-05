@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>xml</title>
+<style type="text/css">
+.colors{background-color: red;}	
+</style>
+<script type="text/javascript"> 
+//读取XML文件 
+function loadXML(xmlFile) { 
+var xmlDoc; 
+if (window.ActiveXObject) { 
+xmlDoc = new ActiveXObject("Microsoft.XMLDOM"); 
+xmlDoc.async = false; 
+xmlDoc.load(xmlFile); 
+} 
+else if (document.implementation && document.implementation.createDocument) { 
+xmlDoc = document.implementation.createDocument("", "", null); 
+xmlDoc.async = false; 
+xmlDoc.load(xmlFile); 
+} else { 
+alert('您的浏览器不支持该系统脚本！'); 
+} 
+return xmlDoc; 
+} 
+
+//输出XML文件 
+function outXML(xmlFile){ 
+var xmlDoc = loadXML(redCards.xml); 
+var x = xmlDoc.getElementsByTagName("tips"); 
+var text=x[0].outerHTML.replace(/</g,"<"); 
+return text; 
+} 
+
+function dirXML(xmlDoc){ 
+var entry=xmlDoc.getElementsByTagName("tips")[0].getElementsByTagName("id"); 
+for (var i=0,j=entry.length; i<j;i++){ 
+console.log(entry[i].getAttribute("key")); 
+console.log(entry[i].childNodes[0].nodeValue); 
+} 
+} 
+</script>
+</head>
+
+<body>
+
+</body>
+</html>

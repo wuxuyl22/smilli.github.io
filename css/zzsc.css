@@ -1,0 +1,129 @@
+@charset "gb2312";
+body {
+	font-size: 12px;
+	line-height: 150%;
+}
+.box {
+	width: 220px;
+	position: relative;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+
+.chess_hand {
+	float:left;
+	text-align:center
+}
+.chess_left {
+	float: left;
+	text-align: center;
+}
+.chess_right {
+	
+	float:right;
+	display:none
+}
+
+.move_info {
+	position: absolute;
+	float: right;
+	margin-top: 20px;
+	left: 406px;
+	top: 43px;
+	width: 300px;
+	height: 171px;
+	/*background-image: url(../../jiaoben1765/img/stype_2/b_j.png); */
+}
+.tips {
+	position: absolute;
+	float: right;
+	margin-top: 20px;
+	left: 377px;
+	top: 227px;
+	width: 312px;
+	height: 112px;
+	animation-direction: alternate;
+	background-color: #DBFFDB;
+	text-align: left;
+	/*background-image: url(../../jiaoben1765/img/stype_2/b_j.png); */
+}
+.messages {
+	position: absolute;
+	float: right;
+	margin-top: 20px;
+	left: 2.917in;
+	top: 380px;
+	width: 350px;
+	height: 300px;
+	text-align: left;
+	background-image: url(messageBg.png);
+	/*background-image: url(img/stype_1/messageBg.png);*/ 
+	                                 
+}
+
+.state_info {
+	position: absolute;
+	float: right;
+	margin-top: 20px;
+	width: 106px;
+	height: 171px;
+	left: 558px;
+	top: -5px;
+}
+.bill_box {
+	height: 320px;
+	width: 80px;
+	overflow:auto;
+}
+.bill_box li {
+	cursor:pointer;
+	text-align:left
+}
+.bill_box li:hover {
+	cursor:pointer;
+	background: #C6A577;
+}
+.bill_box li:active {
+	cursor:pointer;
+	background: #fff;
+}
+#billList {
+	margin-top:20px
+}
+.bn_box {
+	display: inline;
+	position: absolute;
+	left: 459px;
+	top: 52px;
+	width: 209px;
+	height: 37px;
+}
+.bn_card {
+	position: absolute;
+	display:none
+	float: right;
+	left: 450px;
+	top: 367px;
+}
+.bn_card {
+	position: absolute;
+	display:none
+	float: right;
+	left: 450px;
+	top: 377px;
+}
+.bn_card canvas{
+	position: absolute;
+	
+}
+
+.lux
+{
+transform: translate(50px,100px);
+-ms-transform: translate(50px,100px);		/* IE 9 */
+-webkit-transform: translate(50px,100px);	/* Safari and Chrome */
+-o-transform: translate(50px,100px);		/* Opera */
+-moz-transform: translate(50px,100px);		/* Firefox */
+}

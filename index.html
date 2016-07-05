@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>纹特牌DEMO</title>
+<link href="css/zzsc.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div class="box" id="box">
+
+<div class="chess_left">
+    <canvas id="chess1">对不起，您的浏览器不支持HTML5，请升级浏览器至IE9、firefox或者谷歌浏览器！</canvas>
+   
+	  <!--audio src="audio/click.wav" id="clickAudio" preload="auto"></audio>
+		<!--<audio src="audio/check.wav" id="checkAudio" preload="auto"></audio>-->
+		<!--audio src="audio/select.wav" id="selectAudio" preload="auto"></audio>-->
+		<div>
+      <ol id="billBox" class="bill_box">
+          
+      </ol>
+     
+       
+	</div>
+   
+	<div class="chess_right" id="chessRight">
+    
+  </div>
+
+ <div class="bn_card" id="bnCard"></div>
+  <canvas id="cardInfo">试试看</canvas>
+  <div class="bn_card2" id="bnCard2"></div>
+
+  </div>
+<script src="http://sandbox.runjs.cn/js/sandbox/jquery/jquery-1.8.2.min.js"></script>
+<script src="http://realtime.plhwin.com/socket.io/socket.io.js"></script>
+
+<script src="js/common.js"></script> 
+<script src="js/keyz.js"></script>
+<script src="js/play.js"></script> 
+<script src="js/AI.js"></script> 
+<script src="js/gambit.js"></script>
+<script type="text/javascript" src="js/but.js" charset="gbk"></script>
+<script src="js/message.js"></script>
+<script src="js/skill.js"></script>
+<script src="js/unique.js"></script>
+<script src="js/card.js"></script>
+<div style="text-align: left; clear: both">
+   <div id="moveInfo" class="move_info">纹特牌</div>
+ 
+  </div>
+</div>
+<div style="text-align:center;clear:both">
+  <div id="stateInfo" class="state_info">本局信息</div>
+  <div id="tip" class="tips"></div>
+     <div id="message" class="messages">11</div>
+      <div class="bn_box" id="bnBox">
+				<input type="button" name="offensivePlay" id="tyroPlay" value="结束回合" />
+				<input type="button" name="offensivePlay" id="superPlay" value="抽卡" />
+                <input type="button" name="dropPlay" id="drop" value="气卡"  />				
+  </div>
+</div>
+</div>
+</body>
+</html>
